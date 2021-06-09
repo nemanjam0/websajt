@@ -1,0 +1,1035 @@
+/*
+BOJE 
+Roze #ff2143
+Plava naslovi #051441
+Siva #bfc0c0;
+Crvena bussiness #ed4141
+Plava FASHION #0077b5
+Zelena tech #0077b5
+Ljubicasta #8a3ab9
+Narandzasta galerija scroll #fc4902
+Plava footer #070b11
+Footer text plava #416275;
+*/
+/*general*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0;
+}
+body
+{
+    height: 3000px;
+}
+
+/*general end*/
+/* MAIN PAGE */
+.main-page a:hover
+{
+    text-decoration: none;
+    color:#ff2143;
+}
+.main-page a
+{
+    color:inherit;
+}
+/*top trending-news*/
+.top-trending-news
+{
+    background-color: black;
+    color:#bebebe;
+    font-size:0.8rem;
+    font-weight: 520;
+}
+/*top trending-news end*/
+
+/*navbar*/
+/*nav bar*/
+.main-navbar.nav-bg
+{
+    background-color: #ff2143;
+    
+ 
+}
+.main-navbar .nav-link
+{
+    color:white !important;
+    text-transform: uppercase;
+    padding-right: 1rem !important;
+}
+.main-navbar.nav-bg .active
+{
+    text-decoration: underline;
+}
+.main-navbar .navbar
+{
+    padding: 1.5rem 1rem !important;
+}
+.main-navbar .nav-left .nav-link:not(:last-child)::after
+{
+    padding-left:1rem;
+    font-weight:light;
+    content:'|';
+}
+.main-navbar .search-btn
+{
+    background-color: transparent;
+    border:none; 
+    color:white;
+}
+.main-navbar .search-btn
+{
+    background-color: transparent;
+    border:none; 
+    color:white;
+}
+.main-navbar .search-section:hover .search-input
+{
+    display: block;
+    transition: all 0.4s;
+    width:200px !important;
+    visibility: visible;
+}
+.main-navbar .search-input
+{
+    width:0px;
+
+    visibility: hidden;
+    transition: all 0.4s;
+    
+}
+/*navbar end*/
+
+/*NEWS CARD*/
+.top-news
+{
+    width:auto;
+    height:auto;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    max-height:600px;
+    
+}
+.top-news .news-info
+{
+    
+    position:absolute;
+    padding:2rem;
+    bottom:0;
+    left:0;
+}
+.top-news .gradient /*drugacije sam uradio ali nije lepo radilo na small pa sam ovako https://www.youtube.com/watch?v=wXhTHyIgQ_U*/
+{
+    position: relative;
+}
+.top-news .gradient:after
+{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgb(255,255,255) !important;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%) !important;
+}
+.top-news img
+{
+    width: 100%;
+    height:100%;
+    
+}
+.top-news .news-info .headline
+{
+   color:#fffdfd;
+   font-weight: 600;
+   text-transform:capitalize;
+}
+.top-news .badge-news.business
+{
+    color:white;
+    padding:.5rem .9rem;
+    background-color:#ed4141;  
+}
+.badge-news
+{
+    margin-bottom:1rem;
+}
+.news-info .meta
+{
+    color:#bfc0c0;
+}
+/*WHATS NEW NEWS*/
+.navbar-items-list .nav-link.active
+{
+    border: 0 !important;
+    background-color:transparent;
+    color:#ff2143 !important;
+}
+.navbar-items-list .nav-link:hover
+{
+    border: 0 !important;
+    background-color:transparent !important;
+    
+}
+.new-news-navbar 
+{
+    font-weight: 500 !important;
+}
+
+.whats-new .headline
+{
+    color:#051441;
+}
+.new-news-navbar .nav-tabs
+{
+    border:0;
+}
+.new-news-navbar .nav-link
+{
+    color:#051441 !important;
+    padding-left: 0rem !important;
+}
+.news-pic-left
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.news-pic-left .img
+{
+  height:auto;
+  max-width:125px;
+  border-radius:5px;
+}
+.news-pic-left .news-info
+{
+    display:inline;
+    font-size:.9rem;
+}
+.news-pic-left .badge-news
+{
+    text-transform: uppercase;
+
+}
+.news-pic-left .badge-news.business
+{
+    color:rgb(30, 119, 207);
+}
+.news-pic-left .badge-news.fashion
+{
+    color:#0077b5;
+}
+.news-pic-left .badge-news.tech
+{
+    color:#35f00f;
+}
+.news-pic-left .badge-news.sport
+{
+    color:red;
+}
+/*SOCIAL NETWORKS*/
+.social-network-info
+{
+    line-height: 1.2;
+}
+.social-network-info .social-network-followers
+{
+    font-size:.8rem;
+    font-weight: 500;
+}
+.social-network-info .social-network-followers-text
+{
+    color:#bfc0c0;
+}
+/*most recent section*/
+.most-recent-section > .headline
+{
+    font-size:1.3rem;
+    font-weight: 500;
+}
+.most-recent-section .top-news .headline
+{
+    font-size:1rem;
+}
+.most-recent-section .top-news .badge-news.vogue
+{
+    color:white;
+    padding:.5rem .9rem;
+    text-transform: uppercase;
+    background-color:rgb(91, 50, 116);
+}
+.most-recent-section .news-pic-left img
+{
+    height:auto;
+    max-width:90px;
+}
+/*MOST POPULAR SECTION*/
+.most-popular-section .card-img-top /*https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width/53252725*/
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    
+}
+.most-popular-section .carosel-controls
+{
+    min-height: 70px;
+    transition: all 0.4s;
+}
+.most-popular-section .control-left
+{
+    color:#bfc0c0;
+    font-size: 1.5rem;
+    transition: all 0.4s;
+}
+.most-popular-section .control-right
+{
+    color:#bfc0c0;
+    font-size: 1.5rem;
+    transition: all 0.4s;
+}
+.most-popular-section .control-left:hover
+{
+    color:#bfc0c0;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.4s;
+}
+.most-popular-section .control-right:hover
+{
+    color:#bfc0c0;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.4s;
+}
+.most-popular-section .card-title
+{
+    font-size:.9rem;
+    font-weight:600;
+}
+/*trending news section*/
+.trending-news
+{
+    position:relative;
+}
+.trending-news .news-info
+{
+    position: absolute;
+    
+    padding:1rem 0 0 1.5rem;
+    width:78%;
+    min-height: 40%;
+    background-color: white;
+    border-radius: 0 10px 0 0;
+    bottom: 0;
+    left: 0;
+}
+.trending-news .news-info .headline
+{
+    color:#051441;
+    font-weight: 600;
+    
+}
+.trending-news img
+{
+    width:100%;
+    height:auto;
+}
+.trending-news .news-info .date
+{
+    color:#bfc0c0;
+}
+.play-btn
+{
+
+    color:#bfc0c0;
+    font-size: 2rem;
+    transition: all .6s;
+}
+.play-btn:hover
+{
+    color:#ff2143;
+    transition: all .6s;
+}
+/*VIDEOS*/
+.video-card .headline
+{
+    color:#051441;
+    font-weight:500;
+}
+/* */
+.bottom-news .carousel-indicators
+{
+    bottom:-50px;
+}
+.bottom-news .carousel-indicators li.active
+{
+    background-color:#fc4902;
+    align-self:center;
+    height:10px;
+    width:50px;
+    border-radius: 10% / 50%;
+    transition: all .4s;
+}
+.bottom-news .carousel-indicators li:not(.active)
+{
+    height:10px;
+    width:10px;
+    border-radius:100%;
+    background-color:grey;
+    transition: all .4s;
+}
+/*footer*/
+.footer
+{
+    background-color: #070b11;
+    color:white;
+}
+.footer .about
+{
+    color:#416275;
+}
+.footer .news-pic-left .img
+{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.footer .news-pic-left .meta
+{
+    color:#416275;
+}
+.footer a:hover
+{
+    text-decoration: none;
+    color:#ff2143;
+}
+.footer a
+{
+    color:inherit;
+}
+/*copyright*/
+.copyright-section
+{
+    background-color: #000;
+    color:#416275;
+    
+}
+.copyright-section .heart-icon
+{
+    color:#ff2143;
+}
+/* VIDEO MODAL */
+#videoModal .videoWrapper { /* https://css-tricks.com/fluid-width-video/ */
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+#videoModal  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+
+
+
+/*blog detalis*/
+
+/*general*/
+.custom-btn
+{
+    border:1px solid #ff2143;
+    color:#ff2143;
+    font-weight:lighter;
+    transition: all 0.5s;
+    letter-spacing: .2rem;
+    width:100%;
+    font-size:.9rem;
+}
+.custom-btn:hover
+{
+    border:1px solid #ff2143;
+    background-color: #ff2143;
+    color:#fff;
+    transition: all 0.5s;
+}
+
+.post
+{
+    line-height:2;
+}
+.post .headline
+{
+    color:#051441;
+}
+.post .meta
+{
+    color:#bfc0c0;
+    font-size:.9rem;
+    font-weight:400;
+}
+.post .content
+{
+    color:grey;
+}
+.post .quote-box
+{
+    background-color: rgb(240, 238, 238);
+    padding:2rem;
+}
+.post .quoted-text
+{
+    background-color: white;
+    border-left:3px solid gray;
+    padding-left:1rem;
+}
+/*POST SOCIAL*/
+.post .social .likes
+{
+    color:grey;
+}
+.post .social .social-network
+{
+    padding:0.5rem;
+    color:gray;
+}
+.post .social .social-network:hover
+{
+    color:#ff2143;
+}
+/*POST NAVIGATION*/
+.post .navigation a
+{
+    color:gray;
+    text-decoration: none;
+}
+.post .navigation a:hover
+{
+    color:#ff2143;
+}
+.post .navigation .headline
+{
+    color:#051441;
+}
+/*AUTHOR*/
+.post .author .name
+{
+    color:#051441;
+}
+.post .author .biography
+{
+    color:grey;
+}
+/*comments*/
+.comments .counter
+{
+    color:#051441;
+}
+.comments .comment .author-pic
+{
+    object-fit: contain;
+}
+.comments .comment .author
+{
+    color:#051441;
+}
+.comments .comment .date
+{
+    color:grey;
+    font-size:.9rem;
+}
+.comments .comment .reply
+{
+    color:grey;
+    font-size: .9rem;
+}
+.comments .comment .reply:hover
+{
+    color:#ff2143;
+    font-size: .9rem;
+    cursor: pointer;
+}
+/*NEW COMMENT*/
+.new-comment .headline
+{
+    color:#051441;
+}
+.new-comment form input,.new-comment form textarea
+{
+    padding:1.3rem;
+    font-weight: lighter;
+    font-size:.9rem;
+}
+/*=======SIDBARS*/
+.sidebar  .section-headline
+{
+    color:#051441;
+    font-size:1.3rem;
+    padding-bottom:1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.125);
+}
+.sidebar
+{
+    padding-left:4rem !important;
+}
+/*search bar*/
+.search-bar .search-input
+{
+    font-size:.9rem;
+    padding:1rem;
+}
+.search-bar input
+{
+    box-sizing: border-box;
+    height:100%;
+}
+.search-bar .search-icon
+{
+    right:0;
+    display:inline;
+    color:white;
+    box-sizing: border-box;
+    background-color: #ff2143;  
+    height:100%;
+    width:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:default;
+    
+}
+/*categories*/
+.categories-section .list-group-item a
+{
+    color:gray;
+}
+.categories-section .list-group-item
+{
+    padding-bottom:1.3rem;
+}
+/*recent-posts*/
+.recent-posts
+{
+    max-width: 100%;
+    object-fit: contain;
+}
+.recent-posts .news-info
+{
+    max-width: 100%;
+}
+
+.recent-posts .news-info *
+{
+    margin-bottom: 1rem;
+    display:block;
+}
+.recent-posts .headline
+{
+    height:1rem;
+    display:inline-block;
+    max-width:200px;
+    white-space:nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+/*TAG CLOUD*/
+.tag-cloud-section .tag
+{
+    color:gray;
+    display:inline-block;
+    flex-direction: row;
+    border:  1px solid rgba(128, 128, 128, 0.125);
+    background-color:white;
+    height:fit-content;
+    width: fit-content;
+    padding:.2rem .5rem;
+    margin:.7rem;
+    font-size:.9rem;
+    
+}
+/*newsletter*/
+.newsletter-section .email-input
+{
+    font-size:.9rem;
+    padding:1rem;
+    height: 100%;
+}
+
+
+
+.posts .single-post
+{
+    text-decoration: none;
+    padding-top:5rem;
+    display:inline-block;
+}
+.posts .single-post:hover .headline
+{
+    color:#ff2143;
+}
+.posts .single-post .body
+{
+    position:relative;
+}
+.posts .single-post .date-box
+{
+    position: absolute;
+    text-align: center;
+    padding:5px;
+    border-radius: 7px;
+    color:white !important;
+    top:-100px;
+    width:75px;
+    height:75px;
+    background-color: #ff2143;
+}
+.posts .single-post .date
+{
+    font-size:1.6rem;
+}
+.posts .single-post .month
+{
+    font-size:1rem;
+}
+.posts .single-post .headline
+{
+    color:#051441;
+    font-size:1.5rem;
+    font-weight: 500;
+}
+.posts .single-post .text
+{
+    color:gray;
+}
+.posts .single-post .meta
+{
+    color:#bfc0c0;
+}
+/*PAGINATION*/
+.posts .pagination
+{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.posts .pagination *
+{
+    margin:.3rem;
+    color:gray;
+}
+.posts .pagination *:hover
+{
+    margin:.3rem;
+    color:#ff2143;
+    background-color: #fff;
+}
+
+
+/*ABOUT PAGE*/
+.about .about-headline:before
+{
+    content:' ';
+    border-bottom: 3px solid #ff2143;
+    display:inline-block;
+    margin-right:1rem;
+    margin-bottom:.7rem;
+    min-width:60px;
+    height:5px;
+}
+.about p
+{
+    color:gray;
+    margin-top:2rem;
+}
+.about.picture-section/*radio sam preko gradienta iako sam imao sliku za background*/
+{
+    background: #ff2143;
+    background: linear-gradient(90deg, #ff2143 35%, #080b12 35%, #080b12 35%);
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    position:relative;
+    padding:3rem 0px;
+    background-attachment: fixed;
+}
+.picture-section .headline-1,.team-members-section .headline-1
+{
+    color:#ff2143;
+}
+.picture-section .headline-1:before,.team-members-section .headline-1:before
+{
+    content:' ';
+    border-bottom: 3px solid #ff2143;
+    display:inline-block;
+    margin-right:.5rem;
+    margin-bottom:.3rem;
+    min-width:60px;
+    height:5px;
+}
+.picture-section .headline-2,.team-members-section .headline-2
+{
+    font-weight: 600;
+}
+.picture-section p
+{
+    color:#fff;
+}
+.more-about-btn
+{
+    background-color:#ff2143;
+    color:#fff;
+    font-weight: 500;
+    transition: all 0.5s;
+    letter-spacing: .1rem;
+    font-size:.8rem;
+}
+.more-about-btn:hover
+{
+    background-color: #f5092c;
+    transition: all 0.5s;
+}
+
+/*TEAM MEMBERS*/
+.team-members-section .headline-2
+{
+    color:#051441;
+}
+.team-members-section .member .headline-1:before
+{
+    min-width:20px;
+}
+/*BOTTOM AD*/
+.bottom-ad-section
+{
+    margin-top:5rem;
+}
+/***RESPONSIVE****/
+/*xs - breakpoint*/
+@media (max-width:575.98px)
+{
+.top-trending-news .row
+{
+    display:flex;
+    justify-content: center;
+}
+.main-navbar
+ {
+     font-size:1.5rem!important;
+ }
+ .main-navbar
+ {
+     font-size:1.5rem!important;
+ }
+.main-navbar .nav-left .nav-link:not(:last-child)::after
+{
+    content:'';
+}
+ .main-navbar .navbar
+ {
+     display: flex !important;;
+     justify-content: center !important;
+
+     
+ }
+ .main-navbar .navbar .navbar-toggler
+ {
+    position:absolute;
+    right:0;
+    top:5px;
+ }
+ .main-navbar .search-section
+ {
+     min-width: 100%;
+     align-self: center;
+ }
+#navbarNavAltMarkup .navbar-nav.social-networks
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#navbarNavAltMarkup .navbar-nav.social-networks
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:0 !important;
+    
+}
+#navbarNavAltMarkup .navbar-nav .search-section
+{
+    height:100%;
+    border:0 !important;
+}
+/*top section*/
+.top-section .top-news.smaller
+{
+    max-height:200px;
+}
+.top-section .news-info h1
+{
+    font-size:1.32rem;
+}
+.top-section .sm-no-padding
+{
+    padding:0;
+}
+/*most popular news section*/
+.vertical-advert
+{
+    display:none;
+}
+
+.pb-xs
+{
+    padding-bottom: 1rem;
+}
+.mt-xs
+{
+    margin-top: 1rem;
+}
+/*===========about page*/
+/*picture section*/
+.about.picture-section/*radio sam preko gradienta iako sam imao sliku za background*/
+{
+    background: linear-gradient(180deg, #ff2143 40%, #080b12 40%, #080b12 35%);
+
+}
+/*=============blog-page*/
+.sidebar
+{
+    padding-left:1rem !important;
+}
+/* =================blog details page */
+
+}
+/*sm - breakpoint*/
+@media (min-width:576px) and (max-width:767.98px)
+{
+   
+}
+/*md - breakpoint*/
+@media (min-width:576px) and (max-width:991.98px) 
+{
+
+ .main-navbar
+ {
+     font-size:1.5rem!important;
+ }
+ .main-navbar .navbar
+{
+    padding: 1.5rem 1rem !important;
+}
+.main-navbar .nav-left .nav-link:not(:last-child)::after
+{
+    content:'';
+}
+ .main-navbar .navbar
+ {
+     display: flex !important;;
+     justify-content: center !important;
+
+ }
+ .main-navbar .navbar .navbar-toggler
+ {
+    position:absolute;
+    right:0;
+    top:5px;
+ }
+#navbarNavAltMarkup .navbar-nav.social-networks
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#navbarNavAltMarkup .navbar-nav.social-networks
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:0 !important;
+    
+}
+#navbarNavAltMarkup .navbar-nav .search-section
+{
+    height:100%;
+    border:0 !important;
+}
+/*top section*/
+.top-section .top-news.smaller
+{
+    max-height:200px;
+}
+.top-section .mr-sm
+{
+    padding-right:1rem;
+}
+.top-section .md-no-padding
+{
+    padding:0;
+}
+/*most popular news section*/
+.vertical-advert
+{
+    display:none;
+}
+/*trending news section*/
+.trending-news-section .row
+{
+    display:flex;
+    justify-content: center;
+}
+/*============about page*/
+/*members*/
+.team-members-section .row
+{
+    display: flex;
+    justify-content: center;
+}
+
+.no-padding-md
+{
+    padding:0;
+}
+.mt-md
+{
+    margin-top:1rem;
+}
+
+}
+/*lg - breakpoint*/
+@media (min-width:992px) and (max-width:1199.98px)
+{
+    .main-navbar .navbar
+    {
+        padding: 0.5rem 1rem !important;
+    }
+}
+/*xl - breakpoint*/
+@media (min-width:1200px) and (max-width:3000px)
+{
+    .main-navbar .navbar
+    {
+        padding: 0.5rem 1rem !important;
+    }
+}
+.no-padding
+{
+    padding:0;
+}
