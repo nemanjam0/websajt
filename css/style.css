@@ -675,6 +675,10 @@ body
     font-size:.9rem;
     
 }
+.instagram-feeds .img-fluid:hover
+{
+    opacity:0.6;
+}
 /*newsletter*/
 .newsletter-section .email-input
 {
