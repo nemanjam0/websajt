@@ -915,7 +915,8 @@ body
 /*most popular news section*/
 .vertical-advert
 {
-    display:none;
+    display: flex;
+    justify-content: center;
 }
 
 .pb-xs
