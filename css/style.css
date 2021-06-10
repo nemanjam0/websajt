@@ -68,6 +68,14 @@ body
 {
     padding: 1.5rem 1rem !important;
 }
+.main-navbar .social-networks a:hover i,.main-navbar .search-btn:hover,.main-navbar .nav-link:hover
+{
+    color:#051441 !important;
+}
+.main-navbar .nav-link:hover::after
+{
+    color:white !important;
+}
 .main-navbar .nav-left .nav-link:not(:last-child)::after
 {
     padding-left:1rem;
