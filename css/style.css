@@ -520,6 +520,14 @@ body
 {
     color:grey;
 }
+.post .social .likes a
+{
+    color:inherit;
+}
+.post .social .likes a:hover
+{
+    color:#ff2143;
+}
 .post .social .social-network
 {
     padding:0.5rem;
