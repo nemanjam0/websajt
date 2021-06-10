@@ -208,6 +208,14 @@ body
     flex-direction: row;
     align-items: center;
 }
+.news-pic-left a
+{
+    color:inherit;
+}
+.news-pic-left a:hover
+{
+    color:#ff2143;
+}
 .news-pic-left .img
 {
   height:auto;
