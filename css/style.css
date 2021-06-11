@@ -1049,6 +1049,11 @@ body
     {
         padding: 0.5rem 1rem !important;
     }
+    .main-navbar .social-networks
+    {
+        margin: -1rem;
+        padding:0.5rem;
+    }
 }
 /*xl - breakpoint*/
 @media (min-width:1200px) and (max-width:3000px)
@@ -1056,6 +1061,11 @@ body
     .main-navbar .navbar
     {
         padding: 0.5rem 1rem !important;
+    }
+    .main-navbar .social-networks
+    {
+        margin: -1rem;
+        padding:0.5rem;
     }
 }
 .no-padding
