@@ -9,7 +9,7 @@ Zelena tech #0077b5
 Ljubicasta #8a3ab9
 Narandzasta galerija scroll #fc4902
 Plava footer #070b11
-Footer text plava #416275;
+Footer text plava #a8c6d8;
 */
 /*general*/
 *
@@ -62,19 +62,34 @@ body
 }
 .main-navbar.nav-bg .active
 {
-    text-decoration: underline;
+    color:#051441 !important;
+}
+.main-navbar.nav-bg .active::after
+{
+    color:white !important;
 }
 .main-navbar .navbar
 {
     padding: 1.5rem 1rem !important;
 }
-.main-navbar .social-networks a:hover i,.main-navbar .search-btn:hover,.main-navbar .nav-link:hover
+.main-navbar .social-networks a:hover i,.main-navbar
 {
     color:#051441 !important;
+}
+.main-navbar .nav-link
+{
+    opacity:1;
+    transition: all .4s;
+}
+.main-navbar .nav-link:hover
+{
+    opacity:0.6;
+    transition: all .4s;
 }
 .main-navbar .nav-link:hover::after
 {
     color:white !important;
+    opacity:1;
 }
 .main-navbar .nav-left .nav-link:not(:last-child)::after
 {
@@ -94,17 +109,35 @@ body
     border:none; 
     color:white;
 }
+.main-navbar .search-btn:hover
+{
+    color:#ff2143;
+}
 .main-navbar .search-section:hover .search-input
 {
     display: block;
-    transition: all 0.4s;
+    transition: all 0.3s;
+    opacity:1;
     width:200px !important;
     visibility: visible;
+}
+.main-navbar .search-section:hover .flex-row
+{
+   background-color:#051441;
+   transition: all 0.3s;
+   border-radius:5px;
+   padding-right:.6rem;
+}
+.main-navbar .search-section .flex-row
+{
+    transition: all 0.2s;
+   background-color:none;
+   padding-right:.6rem;
 }
 .main-navbar .search-input
 {
     width:0px;
-
+    opacity:0;
     visibility: hidden;
     transition: all 0.4s;
     
@@ -412,7 +445,7 @@ body
 }
 .footer .about
 {
-    color:#416275;
+    color:#a8c6d8;
 }
 .footer .news-pic-left .img
 {
@@ -422,7 +455,7 @@ body
 }
 .footer .news-pic-left .meta
 {
-    color:#416275;
+    color:#a8c6d8;
 }
 .footer a:hover
 {
@@ -437,7 +470,7 @@ body
 .copyright-section
 {
     background-color: #000;
-    color:#416275;
+    color:#a8c6d8;
     
 }
 .copyright-section .heart-icon
@@ -842,6 +875,10 @@ body
 {
     min-width:20px;
 }
+.last-in-row-member
+{
+    padding-right:50px;
+}
 /*BOTTOM AD*/
 .bottom-ad-section
 {
@@ -946,10 +983,15 @@ body
 /* =================blog details page */
 
 }
+
 /*sm - breakpoint*/
-@media (min-width:576px) and (max-width:767.98px)
+@media (max-width:767.98px)
 {
-   
+    .mt-mobile
+    {
+        margin-top:3rem;
+    }
+    
 }
 /*md - breakpoint*/
 @media (min-width:576px) and (max-width:991.98px) 
@@ -1038,7 +1080,7 @@ body
 }
 .mt-md
 {
-    margin-top:1rem;
+    margin-top:3rem;
 }
 
 }
