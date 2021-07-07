@@ -81,7 +81,7 @@ body
     opacity:1;
     transition: all .4s;
 }
-.main-navbar .nav-link:hover::not(.search-section)
+.main-navbar .navbar-nav .nav-link.page:hover
 {
     opacity:0.6;
     transition: all .4s;
@@ -994,6 +994,21 @@ body
     {
         margin-top:3rem;
     }
+    .main-navbar .search-input
+    {
+        opacity:1 !important;
+        width:200px;
+        visibility: visible;
+        margin-left:1rem;
+        
+    }
+    .main-navbar .search-section .search-btn
+    {
+       background-color:#051441;
+        padding-left:.7rem;
+       border-radius:5px;
+       padding-right:.6rem;
+    }
     
 }
 /*md - breakpoint*/
@@ -1024,6 +1039,21 @@ body
     right:0;
     top:5px;
  }
+ .main-navbar .search-input
+{
+    opacity:1 !important;
+    width:200px;
+    visibility: visible;
+    margin-left:1rem;
+    
+}
+.main-navbar .search-section .search-btn
+{
+   background-color:#051441;
+    padding-left:.7rem;
+   border-radius:5px;
+   padding-right:.6rem;
+}
 #navbarNavAltMarkup .navbar-nav.social-networks
 {
     display:flex;
